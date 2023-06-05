@@ -1,0 +1,19 @@
+.showcase-list-area{
+    margin: 64px auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    @include breakpoint-up(medium){     
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+}
+
+hr{
+    height: 1px;
+    border: none;
+    background: $gradien-1;
+}

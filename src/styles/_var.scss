@@ -1,0 +1,18 @@
+
+// Color
+$prim-dark: #2A2D32;
+$prim-light: #eeeeee;
+
+$divi: #57da3d;
+$strong: #2fb8ff;
+
+$grad1: #20afdb;
+$grad2: #225cae;
+
+$gradien-1: linear-gradient(135deg, #20afdb 0%, #225cae 100%);
+$gradien-2: linear-gradient(180deg, #20afdb 0%, #225cae 100%);
+
+$box-shadow-up: 8px 8px 16px #000000,-2px -2px 4px #7F646464;
+$box-shadow-down: inset -1px -1px 4px #7F646464, inset 1px 1px 4px 4px #000000a9;
+
+$text-shadow: 2px -2px $prim-dark;

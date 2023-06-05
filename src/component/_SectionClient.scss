@@ -1,0 +1,63 @@
+.client-section{
+    @include home-section-skeleton;
+    &::after{
+        content: '';
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 320px;
+        height: 320px;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        background: $gradien-1;
+        @include breakpoint-up(large){
+            width: 450px;
+            height: 450px;
+        }
+    }
+    .client-area{
+        align-self: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        @include breakpoint-up(large){
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 32px;
+        }
+        .client-card{
+            width: 96px;
+            height: 96px;
+            background: $prim-dark;
+            box-shadow: $box-shadow-down;
+            background-blend-mode: normal;
+            border-radius: 10%;
+            @include breakpoint-up(medium){
+                width: 126px;
+                height: 126px;
+            }
+            @include breakpoint-up(large){
+                width: 20vw;
+                height: auto;
+            }
+            @include breakpoint-up(xlarge){
+                min-width: 10vw;
+                max-width: 12vw;
+                height: auto;
+            }
+            .client-logo-mask{
+                overflow: hidden;
+                width: 95%;
+                height: 95%;
+                margin: 5%;
+                border-radius: 2%;
+                img{
+                    width: inherit;
+                    height: inherit;
+                }
+            }
+        }
+    }
+}

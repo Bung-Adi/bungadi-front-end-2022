@@ -1,0 +1,29 @@
+
+.portf-post-tag{
+    display: flex;
+    flex-direction: row;
+    span{
+        padding: 4px;
+        margin-right: 16px;
+        border: 1px solid $strong;
+        border-radius: 10%;
+        p{
+            margin: 0;
+        }
+    }   
+}
+.wp-video{
+    max-width: 90vw;
+    height: auto;
+}
+.portf-post-content{
+    p{
+        img{
+            max-width: 90vw;
+            height: auto;
+        }
+        strong{
+            color: $strong;
+        }
+    }
+}
